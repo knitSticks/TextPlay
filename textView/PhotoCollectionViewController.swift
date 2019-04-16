@@ -12,7 +12,8 @@ class PhotoCollectionViewController: UICollectionViewController {
   @IBAction func addTapped(_ sender: Any) {
     let controller = UIImagePickerController()
     controller.delegate = self
-    controller.sourceType = .camera
+    
+    controller.sourceType = .photoLibrary
     
     present(controller, animated: true, completion: nil)
   }

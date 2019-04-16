@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lzg-Mm-q9G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lzg-Mm-q9G">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -92,8 +92,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="06r-aS-7Lu">
-                                <rect key="frame" x="0.0" y="85.5" width="375" height="581.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="06r-aS-7Lu">
+                                <rect key="frame" x="0.0" y="85.5" width="375" height="496"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxL-eO-PIj">
                                 <rect key="frame" x="0.0" y="64" width="375" height="21.5"/>
@@ -101,30 +101,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="UC5-zm-2zi">
-                                <rect key="frame" x="0.0" y="85.5" width="375" height="581.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="06r-aS-7Lu" secondAttribute="bottom" id="2A6-L4-SaX"/>
+                            <constraint firstItem="06r-aS-7Lu" firstAttribute="centerY" secondItem="dSD-ey-TC8" secondAttribute="centerY" id="2ME-px-ZMf"/>
+                            <constraint firstItem="06r-aS-7Lu" firstAttribute="centerX" secondItem="dSD-ey-TC8" secondAttribute="centerX" id="54F-Z7-cc0"/>
                             <constraint firstItem="mXB-l0-UDM" firstAttribute="trailing" secondItem="06r-aS-7Lu" secondAttribute="trailing" id="8xg-Qs-7a9"/>
                             <constraint firstItem="06r-aS-7Lu" firstAttribute="top" secondItem="mxL-eO-PIj" secondAttribute="bottom" id="AGu-xg-frc"/>
                             <constraint firstItem="mxL-eO-PIj" firstAttribute="leading" secondItem="mXB-l0-UDM" secondAttribute="leading" id="EOC-QG-c15"/>
-                            <constraint firstItem="UC5-zm-2zi" firstAttribute="trailing" secondItem="06r-aS-7Lu" secondAttribute="trailing" id="O1h-lN-VkA"/>
-                            <constraint firstItem="UC5-zm-2zi" firstAttribute="top" secondItem="06r-aS-7Lu" secondAttribute="top" id="Pof-t0-6Oo"/>
                             <constraint firstItem="06r-aS-7Lu" firstAttribute="leading" secondItem="mXB-l0-UDM" secondAttribute="leading" id="brk-SC-iAO"/>
                             <constraint firstItem="mXB-l0-UDM" firstAttribute="trailing" secondItem="mxL-eO-PIj" secondAttribute="trailing" id="cBy-l8-s5s"/>
-                            <constraint firstItem="UC5-zm-2zi" firstAttribute="bottom" secondItem="06r-aS-7Lu" secondAttribute="bottom" id="ccx-MN-Zzo"/>
-                            <constraint firstItem="UC5-zm-2zi" firstAttribute="leading" secondItem="06r-aS-7Lu" secondAttribute="leading" id="m3H-ID-upb"/>
                             <constraint firstItem="mxL-eO-PIj" firstAttribute="top" secondItem="mXB-l0-UDM" secondAttribute="top" id="nIp-OK-YNz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mXB-l0-UDM"/>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="9ke-eV-y2V"/>
                     <connections>
-                        <outlet property="faceBoxView" destination="UC5-zm-2zi" id="dli-c8-MNm"/>
                         <outlet property="imageView" destination="06r-aS-7Lu" id="NTx-3H-42S"/>
                         <outlet property="predictionLabel" destination="mxL-eO-PIj" id="Cac-pN-fsv"/>
                     </connections>

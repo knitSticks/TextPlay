@@ -16,6 +16,8 @@
 		1491C2E32085928500AEAF14 /* textViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491C2E22085928500AEAF14 /* textViewUITests.swift */; };
 		1491C2F120862F4E00AEAF14 /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491C2F020862F4E00AEAF14 /* PictureCollectionViewCell.swift */; };
 		1491C2F32086332200AEAF14 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491C2F22086332200AEAF14 /* ImageViewController.swift */; };
+		631244322262A29E00EF0E30 /* knittingTerms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 631244312262A29E00EF0E30 /* knittingTerms.plist */; };
+		63287D5C226670FB005689B0 /* GreatModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 63287D5B226670FB005689B0 /* GreatModel.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		1491C2E42085928500AEAF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1491C2F020862F4E00AEAF14 /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
 		1491C2F22086332200AEAF14 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		631244312262A29E00EF0E30 /* knittingTerms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = knittingTerms.plist; sourceTree = "<group>"; };
+		63287D5B226670FB005689B0 /* GreatModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GreatModel.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		1491C2C12085928400AEAF14 /* textView */ = {
 			isa = PBXGroup;
 			children = (
+				63287D5B226670FB005689B0 /* GreatModel.mlmodel */,
 				1491C2C22085928400AEAF14 /* AppDelegate.swift */,
 				1491C2C42085928400AEAF14 /* PhotoCollectionViewController.swift */,
 				1491C2C62085928400AEAF14 /* Main.storyboard */,
@@ -109,6 +114,7 @@
 				1491C2CB2085928500AEAF14 /* LaunchScreen.storyboard */,
 				1491C2F22086332200AEAF14 /* ImageViewController.swift */,
 				1491C2CE2085928500AEAF14 /* Info.plist */,
+				631244312262A29E00EF0E30 /* knittingTerms.plist */,
 			);
 			path = textView;
 			sourceTree = "<group>";
@@ -235,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631244322262A29E00EF0E30 /* knittingTerms.plist in Resources */,
 				1491C2CD2085928500AEAF14 /* LaunchScreen.storyboard in Resources */,
 				1491C2CA2085928500AEAF14 /* Assets.xcassets in Resources */,
 				1491C2C82085928400AEAF14 /* Main.storyboard in Resources */,
@@ -262,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63287D5C226670FB005689B0 /* GreatModel.mlmodel in Sources */,
 				1491C2F120862F4E00AEAF14 /* PictureCollectionViewCell.swift in Sources */,
 				1491C2C52085928400AEAF14 /* PhotoCollectionViewController.swift in Sources */,
 				1491C2F32086332200AEAF14 /* ImageViewController.swift in Sources */,
@@ -439,13 +447,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GCDJ389U9P;
+				DEVELOPMENT_TEAM = K66U3NPDH8;
 				INFOPLIST_FILE = textView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Reverb.textView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knitsticks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -457,13 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GCDJ389U9P;
+				DEVELOPMENT_TEAM = K66U3NPDH8;
 				INFOPLIST_FILE = textView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Reverb.textView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.knitsticks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
